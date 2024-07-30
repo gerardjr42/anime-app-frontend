@@ -7,12 +7,23 @@ const NavBar = () => {
         to="/animes"
         className="ml-12 cursor-pointer justify-start self-center text-2xl"
       >
-        Anime App
+        <div className="flex flex-row">
+          <img
+            src="/assets/images/anime-icon.png"
+            alt="anime icon"
+            className="mr-1 h-8 w-8"
+          />
+          <p className="font-sans font-semibold">ime Hub</p>
+        </div>
       </Link>
       <div className="flex flex-1 justify-end self-center">
-        <button className="cursor-pointer border border-gray-400 px-8 py-3 text-xs hover:bg-blue-500">
-          <Link to="/transactions/new">Add New Anime</Link>
-        </button>
+        <Link to="/transactions/new">
+          <img
+            src="/assets/images/plus-symbol-button.png"
+            alt="plus icon"
+            className="mr-8 h-4 w-4 cursor-pointer hover:h-6 hover:w-6"
+          />
+        </Link>
       </div>
     </div>
   );

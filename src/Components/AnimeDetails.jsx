@@ -43,7 +43,7 @@ export default function AnimeDetails() {
       <div className="mx-auto mt-8 w-1/2 text-white">
         <div className="flex items-center self-center align-middle">
           <h2 className="font-sans text-3xl text-white">{anime.title}</h2>
-          <Favorite />
+          <Favorite favorite={anime.is_favorite} />
         </div>
         <p className="mb-2 text-sm text-gray-500">Sub | Dub</p>
         <div className="flex flex-row">

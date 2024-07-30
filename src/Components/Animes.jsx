@@ -20,7 +20,7 @@ export default function Animes() {
   console.log(animes);
 
   return (
-    <div>
+    <div className="mx-auto mt-12 grid w-3/4 grid-cols-5">
       {Array.isArray(animes) && animes.length > 0 ? (
         animes.map((anime) => {
           return (

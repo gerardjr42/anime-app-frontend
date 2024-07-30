@@ -8,10 +8,11 @@ export default function Anime({ anime, id }) {
         <img
           src={anime.image_url}
           alt="anime image"
-          className="h-[22rem] w-[16rem]"
+          className="h-[20rem] w-[14rem]"
         />
       </Link>
-      <p>{anime.title}</p>
+      <p className="mt-2 font-sans font-semibold text-white">{anime.title}</p>
+      <p className="mt-1 font-sans text-sm text-gray-400">Sub | Dub</p>
     </div>
   );
 }
