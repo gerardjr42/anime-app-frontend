@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import Favorite from "./Favorite";
 import StarRating from "./StarRating";
 
@@ -51,10 +51,17 @@ export default function AnimeDetails() {
           <p className="mx-2">|</p>
           <p className="text-white">Average rating: {anime.rating}</p>
         </div>
-        <p className="mt-4">{anime.about}</p>
-        <p className="mt-2 inline-block border bg-[#213944] px-2 font-sans text-gray-300">
-          {anime.genre}
-        </p>
+        <div>
+          <p className="mt-4">{anime.about}</p>
+          <p className="mt-2 inline-block border bg-[#213944] px-2 font-sans text-gray-300">
+            {anime.genre}
+          </p>
+        </div>
+        <div>
+          <Link to="/animes/${id}/edit">
+            <button>Edit</button>
+          </Link>
+        </div>
       </div>
     </div>
   );
