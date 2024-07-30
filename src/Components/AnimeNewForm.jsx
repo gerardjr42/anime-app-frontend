@@ -1,9 +1,9 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 
 const API = import.meta.env.VITE_API_URL;
 
-export default function AnimeEditForm() {
+export default function AnimeNewForm() {
   let { id } = useParams();
   const navigate = useNavigate();
 
@@ -18,30 +18,19 @@ export default function AnimeEditForm() {
     is_favorite: null,
   });
 
-  const updateAnime = () => {
-    fetch(`${API}/animes/${id}`, {
-      method: "PUT",
+  const addAnime = () => {
+    fetch(`${API}/animes`, {
+      method: "POST",
       body: JSON.stringify(anime),
       headers: {
         "Content-Type": "application/json",
       },
     })
-      .then((response) => {
-        navigate(`/animes/${id}`);
+      .then(() => {
+        navigate(`/animes`);
       })
       .catch((e) => console.error("catch", e));
   };
-
-  useEffect(() => {
-    fetch(`${API}/animes/${id}`)
-      .then((response) => {
-        return response.json();
-      })
-      .then((responseJSON) => {
-        setAnime(responseJSON);
-      })
-      .catch((error) => console.error(error));
-  }, [id]);
 
   const handleTextChange = (e) => {
     setAnime({
@@ -59,7 +48,7 @@ export default function AnimeEditForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    updateAnime();
+    addAnime();
   };
 
   return (

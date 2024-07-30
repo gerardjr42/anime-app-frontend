@@ -17,7 +17,7 @@ const NavBar = () => {
         </div>
       </Link>
       <div className="flex flex-1 justify-end self-center">
-        <Link to="/transactions/new">
+        <Link to="/animes/new">
           <img
             src="/assets/images/plus-symbol-button.png"
             alt="plus icon"
