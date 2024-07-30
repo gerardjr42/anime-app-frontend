@@ -26,6 +26,14 @@ export default function AnimeDetails() {
       .catch((e) => navigate("/notfound"));
   }, [id, navigate]);
 
+  const handleDelete = () => {
+    fetch(`${API}/animes/${id}`, {
+      method: "DELETE",
+    })
+      .then(() => navigate(`/animes`))
+      .catch((error) => console.error(error));
+  };
+
   return (
     <div>
       <div className="relative">
@@ -57,9 +65,19 @@ export default function AnimeDetails() {
             {anime.genre}
           </p>
         </div>
-        <div>
-          <Link to="/animes/${id}/edit">
-            <button>Edit</button>
+        <div className="flex justify-end">
+          <Link to={`/animes/${id}/edit`}>
+            <button className="mr-2 rounded-l-md border px-1 hover:bg-[#FF9D03] hover:text-black">
+              Edit
+            </button>
+          </Link>
+          <Link>
+            <button
+              className="rounded-r-md border px-1 hover:bg-red-500 hover:text-black"
+              onClick={handleDelete}
+            >
+              Delete
+            </button>
           </Link>
         </div>
       </div>

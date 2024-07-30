@@ -1,5 +1,6 @@
 import React from "react";
+import AnimeEditForm from "../Components/AnimeEditForm";
 
 export default function Edit() {
-  return <div>Edit</div>;
+  return <AnimeEditForm />;
 }
