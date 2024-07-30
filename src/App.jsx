@@ -7,7 +7,7 @@ import Show from "./Pages/Show";
 
 function App() {
   return (
-    <>
+    <div className="min-h-screen bg-black">
       <Router>
         <NavBar />
         <main>
@@ -18,7 +18,7 @@ function App() {
           </Routes>
         </main>
       </Router>
-    </>
+    </div>
   );
 }
 

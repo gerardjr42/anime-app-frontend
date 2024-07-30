@@ -1,9 +1,10 @@
 import React from "react";
+import AnimeDetails from "../Components/AnimeDetails";
 
 export default function Show() {
   return (
-    <>
-      <h2>Show</h2>
-    </>
+    <div className="">
+      <AnimeDetails />
+    </div>
   );
 }

@@ -2,10 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 const NavBar = () => {
   return (
-    <div className="flex w-full bg-black py-2 text-white">
+    <div className="flex w-full bg-[#23252A] py-2 text-white">
       <Link
-        to="/transactions"
-        className="cursor-pointer justify-start self-center text-2xl"
+        to="/animes"
+        className="ml-12 cursor-pointer justify-start self-center text-2xl"
       >
         Anime App
       </Link>
