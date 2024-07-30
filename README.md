@@ -14,7 +14,6 @@ Welcome to my Anime CRUD (Create, Read, Update, Delete) project! This is a web a
     - [Installation](#installation)
   - [Backend Repository](#backend-repository)
   - [Deployed URLs](#deployed-urls)
-  - [Project Management](#project-management)
   - [Contribution](#contribution)
 
 ## Introduction
@@ -76,12 +75,8 @@ The backend repository for this project is available at: [https://github.com/ger
 
 ## Deployed URLs
 
-- Front-end: [https://anime-crud-frontend.vercel.app/](https://anime-crud-frontend.vercel.app/)
-- Back-end: [https://anime-crud-backend.herokuapp.com/](https://anime-app-ub9q.onrender.com)
-
-## Project Management
-
-I used Jira to manage the development of this project. You can view my Jira board at: [Jira Board]()
+- Front-end: [https://anime-crud-frontend.vercel.app/](https://anime-app-frontend-kappa.vercel.app/)
+- Back-end: [https://anime-crud-backend.herokuapp.com/](https://anime-app-postgresql.onrender.com)
 
 ## Contribution
 
