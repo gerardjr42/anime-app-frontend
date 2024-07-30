@@ -12,7 +12,7 @@ export default function Anime({ anime, id }) {
         />
       </Link>
       <p className="mt-2 font-sans font-semibold text-white">{anime.title}</p>
-      <p className="mt-1 font-sans text-sm text-gray-400">Sub | Dub</p>
+      <p className="mb-2 mt-1 font-sans text-sm text-gray-400">Sub | Dub</p>
     </div>
   );
 }

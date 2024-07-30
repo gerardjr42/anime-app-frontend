@@ -1,10 +1,9 @@
 import { useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const API = import.meta.env.VITE_API_URL;
 
 export default function AnimeNewForm() {
-  let { id } = useParams();
   const navigate = useNavigate();
 
   const [anime, setAnime] = useState({
