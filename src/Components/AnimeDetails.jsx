@@ -16,7 +16,7 @@ export default function AnimeDetails() {
     seasons: 0,
     image_url: "",
     rating: 0,
-    is_favorite: null,
+    is_favorite: false,
   });
 
   useEffect(() => {

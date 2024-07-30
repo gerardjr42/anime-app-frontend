@@ -15,7 +15,7 @@ export default function AnimeNewForm() {
     image_url: "",
     cover_url: "",
     rating: 0,
-    is_favorite: null,
+    is_favorite: false,
   });
 
   const addAnime = () => {
